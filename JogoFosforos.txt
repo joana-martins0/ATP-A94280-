@@ -1,0 +1,145 @@
+def game():
+    print("Bem vindo! Você vai jogar contra o computador(c):")
+   	n=21
+        ordem=input("Pretende jogar primeiro? Sim(s) ou Não(n):")
+        if ordem=="Sim" or ordem=="s" or ordem=="sim" or ordem=="S":
+            while n >1:
+                jogada=int(input("Quantos fósforos quer tirar? 1, 2, 3, 4?"))
+                if jogada>=1 and jogada<=4:
+                    n=n-jogada
+                    print("Restam", n, "fósforos!")
+                    if jogada==1:
+                        n=n-4
+                        print("Jogada do computador é retirar 4 fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if jogada==2:
+                        n=n-3
+                        print("Jogada do computador é retirar 3 fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if jogada==3:
+                        n=n-2
+                        print("Jogada do computador é retirar 2 fósforos.")
+                        print("Restam", n, "fósforos!")    
+                    if jogada==4:
+                        n=n-1
+                        print("Jogada do computador é retirar 1 fósforos.")
+                        print("Restam", n, "fósforos!")
+                if jogada<1 or jogada>4:
+                    print("Erro!")
+                
+            print("Fim de jogo. Jogador perder! :(")  
+        if ordem=="Não" or ordem=="não" or ordem=="n" or ordem=="N":
+            jogada_cpu=random.randint(1,4)
+            n=n-jogada_cpu
+            print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+            print("Restam", n, "fósforos!")
+            while n>1:
+                jogada=int(input("Quantos fósforos quer tirar? 1, 2, 3, 4?"))
+                if jogada>=1 and jogada<=4:    
+                    n=n-jogada
+                    print("Restam", n, "fósforos!")   
+                    if n==1:
+                        print("Jogador ganha!Parabéns!")
+                    if n==2:
+                        jogada_cpu=1
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                        print("O Jogador perdeu!")
+                    if n==3:
+                        jogada_cpu=2
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                        print("O Jogador perdeu!")
+                    if n==4:
+                        jogada_cpu=3
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                        print("O Jogador perdeu!")
+                    if n==5:
+                        jogada_cpu=4
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                        print("O Jogador perdeu!")
+                    if n==6:
+                        jogada_cpu=random.randint(1,4)
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==7:
+                        jogada_cpu=1
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==8:
+                        jogada_cpu=2
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==9:
+                        jogada_cpu=3
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==10:
+                        jogada_cpu=4
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==11:
+                        jogada_cpu=random.randint(1,4)
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==12:
+                        jogada_cpu=1
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==13:
+                        jogada_cpu=2
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==14:
+                        jogada_cpu=3
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==15:
+                        jogada_cpu=4
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==16:
+                        jogada_cpu=random.randint(1,4)
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==17:
+                        jogada_cup=1
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==18:
+                        jogada_cpu=2
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==19:
+                        jogada_cpu=3
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                    if n==20:
+                        jogada_cpu=4
+                        n=n-jogada_cpu
+                        print("Jogada do computador é retirar", jogada_cpu, "fósforos.")
+                        print("Restam", n, "fósforos!")
+                if jogada<1 or jogada>4:
+                    print("Erro!")
+    
+game()
